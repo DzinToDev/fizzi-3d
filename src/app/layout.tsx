@@ -11,7 +11,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="">
-      <body>
+      <body className=" overflow-x-hidden bg-yellow-300">
         <Header />
         <main>
         {children}
