@@ -2,10 +2,15 @@ import { FC } from "react";
 import { Content, asText } from "@prismicio/client";
 import { PrismicRichText, SliceComponentProps } from "@prismicio/react";
 import { PrismicNextImage, PrismicNextLink } from "@prismicio/next";
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
 
 import { Bounded } from "@/components/Bounded";
 import Button from "@/components/Button";
 import { TextSplitter } from "@/components/TextSplitter";
+
+gsap.registerPlugin(useGSAP)
+
 
 /**
  * Props for `Hero`.
