@@ -1,1 +1,17 @@
 @import "tailwindcss";
+/* :root {
+    --slide-duration: 3s;
+  } */
+@keyframes slide-left {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .animate-slide-left {
+    animation: slide-left 3s linear infinite;
+  }
+  
